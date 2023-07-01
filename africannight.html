@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>African Students Association - Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="icon" type="image/png" href="images/Untitled design.png">
+	<style>
+		/* Add your custom styles here */
+	
+		.container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+			.button {
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 5px;
+			background-color: #990000;
+			color: #fff;
+			text-decoration: none;
+			transition: background-color 0.3s ease;
+		}
+
+		.button:hover {
+			background-color: #555;
+		}
+
+		.featured-image {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.featured-image img {
+			width: 45%;
+			border-radius: 5px;
+		}
+
+		.testimonials {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 20px;
+		}
+
+		.testimonial {
+			width: 45%;
+			background-color: #fbfbfb;
+			padding: 20px;
+			border-radius: 5px;
+		}
+
+		.testimonial img {
+			width: 80px;
+			border-radius: 50%;
+			margin-bottom: 10px;
+		}
+
+
+		/* Add your hover effects here */
+		.button:hover {
+			background-color: #990000;
+		}
+
+		.featured-image img:hover {
+			transform: scale(1.1);
+			transition: transform 0.3s ease;
+		}
+
+		.testimonial:hover {
+			background-color: #990000;
+			color: #fff;
+			transition: background-color 0.3s ease, color 0.3s ease;
+		}
+
+		.testimonial:hover p {
+			color: #fff;
+		}
+    /* Existing styles... */
+
+    /* Add custom styles for the <ul> section */
+    #performances ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly; /* Spread the list items evenly */
+        align-items: center; /* Center the list items vertically */
+        flex-wrap: wrap; /* Wrap the list items to a new line if needed */
+        margin-bottom: 20px;
+    }
+
+    #performances ul li {
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    #performances ul li:before {
+        content: "\2022";
+        color: #990000;
+        font-weight: bold;
+        margin-right: 5px;
+        transition: transform 0.3s ease;
+    }
+   
+    #music-and-dance ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-evenly; /* Spread the list items evenly */
+        align-items: center; /* Center the list items vertically */
+        flex-wrap: wrap; /* Wrap the list items to a new line if needed */
+        margin-bottom: 20px;
+    }
+
+    #music-and-dance ul li {
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    #music-and-dance ul li:before {
+        content: "\2022";
+        color: #990000;
+        font-weight: bold;
+        margin-right: 5px;
+        transition: transform 0.3s ease;
+    }
+
+   
+	</style>
+</head>
+<body>
+	<header>
+		<div class="mini-nav fancy">
+			<div class="logo">
+				<img src="images/sweetness.png" alt="School logo">
+				<h1>African Students Association</h1>
+			</div>
+			<ul class="nav-links">
+				<li class="tab"><a href="registration.html">Registration</a></li>
+				<li class="tab"><a href="contact.html">Contact</a></li>
+			</ul>
+            <button class="menu-btn" onclick="toggleMenu()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</div>
+		<nav class="scroll-hide">
+            <ul class="full-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="teams.html">Teams</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+        <div class="container">
+            <section id="event-details">
+                <h2>African Night: Celebrating African Culture</h2>
+                <p>Join us for the African Students Association's biggest event of the year, African Night! Experience a vibrant celebration of African culture through captivating performances, delectable food, and rhythmic music.</p>
+                <div class="button-container">
+                    <a href="registration.html" class="button">Get Tickets</a>
+                </div>
+            </section>
+
+            <section id="performances">
+                <h3>Enthralling Performances</h3>
+                <p>Immerse yourself in a night of unforgettable performances showcasing the rich diversity of African talent. From traditional dances to contemporary music, our lineup of artists will captivate and inspire.</p>
+                <ul>
+                    <li>Traditional African Dances</li>
+                    <li>Afrobeats Music Performance</li>
+                    <li>Parade of Flags</li>
+                    <li>Fashion Show </li>
+                    
+                </ul>
+                <div class="featured-image">
+                    <img src="images/asa7.jpg" alt="Performance 1"onclick="openModal(this)">
+                    <img src="images/image19.jpg" alt="Parade ofz"onclick="openModal(this)">
+                    
+                </div>
+            </section>
+
+            <section id="culinary-delights">
+                <h3>Culinary Delights</h3>
+                <p>Indulge in the flavors of Africa with a diverse array of delicious dishes from different regions. Our talented chefs will craft a menu that showcases the vibrant and authentic tastes of African cuisine.</p>
+                
+                
+                <div class="featured-image">
+                    <img src="images/image10.jpg" alt="Food 1"onclick="openModal(this)">
+                    <img src="images/food2.JPG" alt="Food 2"onclick="openModal(this)">
+                </div>
+            </section>
+
+            <section id="music-and-dance">
+                <h3>Live Music and Dance</h3>
+                <p>The pulsating beats and infectious rhythms of African music will set the stage ablaze, inviting you to let loose and dance the night away. Our talented DJs will curate a playlist that combines traditional African tunes with contemporary hits.</p>
+                <p>Get ready to move your feet to the:</p>
+                <ul>
+                    <li>Enchanting Afrobeats (West Africa)</li>
+                    <li>Maghreb Rai (North Africa)</li>
+                    <li>Amapiano (Southern Africa)</li>
+                    <li>Soukous (Central Africa)</li>
+                    <li>Bongo Flava (East Africa) and many more</li>
+                </ul>
+
+            </section>
+
+            <section id="highlights">
+                <h3>Highlights of Previous African Nights</h3>
+                <div class="featured-image">
+                    <img src="images/image4.jpg" alt="African Night 1" onclick="openModal(this)">
+                    <img src="images/image16.jpg" alt="African Night 2" onclick="openModal(this)">
+
+                    
+                </div>
+                <p>Take a glimpse into the memorable moments from our past African Night events.</p>
+            </section>
+
+            
+        </div>
+    </main>    
+	<footer class="fancy">
+		<p>&copy; 2023 African Students Association</p>
+	</footer>
+	<script src="script.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>

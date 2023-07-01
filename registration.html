@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>African Students Association</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="images/Untitled design.png">
+
+</head>
+<body>
+	<header>
+		<div class="mini-nav fancy">
+			<div class="logo">
+				<img src="images/sweetness.png" alt="School logo">
+				<h1>African Students Association</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<button class="menu-btn" onclick="toggleMenu()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</div>
+		<nav class="scroll-show">
+			<ul class="full-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="teams.html">Teams</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="form">
+			<h2>Registration Form</h2>
+			<form class="my-form" name="submit-to-google-sheet">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type="text" id="Name" name="Name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input type="email" id="Email" name="Email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea id="message" name="Message" required></textarea>
+				</div>
+
+				<button type="submit">Submit</button>
+				<div id="success-message" style="display: none;">Message Succesfuly Sent!</div>
+
+			</form>
+			
+		</section>
+	</main>
+	<footer class="fancy">
+		<p>&copy; 2023 African Students Association</p>
+	</footer>
+	<script src="script.js"></script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbwweovuGwQ7lJ6M8ikJr16CwtbMjW6epBAGOh7GR8rRK2CCyE_tY-UmYrVzAg2LRkfftg/exec';
+const form = document.forms['submit-to-google-sheet'];
+const successMessage = document.getElementById('success-message');
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            console.log('Success!', response);
+            successMessage.style.display = 'block';
+            successMessage.classList.remove('fade-out');
+            setTimeout(() => {
+                successMessage.classList.add('fade-out');
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                    form.reset();
+                }, 1000);
+            }, 3000);
+        })
+        .catch(error => console.error('Error!', error.message))
+});
+
+	  </script>
+	      <script src="mobile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>African Students Association - Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="icon" type="image/png" href="images/Untitled design.png">
+
+</head>
+<body>
+	<header>
+		<div class="mini-nav fancy">
+			<div class="logo">
+				<img src="images/sweetness.png" alt="School logo">
+				<h1>African Students Association</h1>
+			</div>
+			<ul class="nav-links">
+				<li class="tab"><a href="registration.html">Registration</a></li>
+				<li class="tab"><a href="contact.html">Contact</a></li>
+			</ul>
+			<button class="menu-btn" onclick="toggleMenu()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</div>
+		<nav class="scroll-show">
+			<ul class="full-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="teams.html">Teams</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>If you have any questions or concerns, please feel free to contact us using the information below:</p>
+			<ul>
+			  <li><strong>Email:</strong> <a href="mailto:asa@coyotes.usd.edu">asa@coyotes.usd.edu</a></li>
+			  <li><strong>Contact Form:</strong> <a href="https://usd.campuslabs.com/engage/organization/asa/contact">link</a></li>
+			  <li><strong>Address:</strong> 349-499 E Cherry St
+				Vermillion , SD 57069
+				USA</li>
+			</ul>
+			<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsQqgklcUh4QaEQRR7yguG-Bv2dugwNY8"></script>
+<script>
+function initMap() {
+  var uluru = {lat: 42.78623646644403, lng: -96.92527423336104};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+</script>
+
+			<p>You can also follow us on social media:</p>
+			<ul class="social-icons">
+			  <li><a href="https://www.facebook.com/ASA.USD/"><i class="fab fa-facebook" style="color:#1877f2;"></i></a></li>
+			  <li><a href="https://www.tiktok.com/@asa.coyotes"><i class="fab fa-tiktok" style="color:#000000;"></i></a></li>
+			  <li><a href="https://www.instagram.com/usd.asa/?igshid=YmMyMTA2M2Y%3D"><i class="fab fa-instagram" style="color:#c13584;"></i></a></li>
+			</ul>
+			<p>We look forward to hearing from you!</p>
+		  </section>
+		  
+		  
+	</main>
+	<footer class="fancy">
+		<p>&copy; 2023 African Students Association</p>
+	</footer>
+		<script src="script.js"></script>
+		<script src="mobile.js"></script>
+
+</body>
+</html>

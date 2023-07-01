@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> African Students Association</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="images/Untitled design.png">
+
+</head>
+<body>
+	<header>
+		<div class="mini-nav fancy">
+			<div class="logo">
+				<img src="images/sweetness.png" alt="School logo">
+				<h1>African Students Association</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<button class="menu-btn" onclick="toggleMenu()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</div>
+		<nav class="scroll-hide">
+			<ul class="full-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="teams.html">Teams</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="about">
+			<h2>About Us</h2>
+			<div class="about-container">
+				<div class="about-image">
+					<img src="images/asa.JPG" alt="African Students Association" onclick="openModal(this)">
+				</div>
+				<div class="about-text">
+					<p>Welcome to the African Students Association! Our mission is to promote and celebrate African culture and heritage on campus. We organize a variety of events throughout the year, including cultural festivals, community service projects, and social gatherings.</p>
+					<p>Our association is open to all students who are interested in learning more about African culture and connecting with fellow students who share similar interests. Join us today and become a part of our vibrant community!</p>
+					<div class="about-button">
+						<a href="registration.html">Join Us</a>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<section id="constitution">
+			<h2>Documents</h2>
+			<div class="constitution-container">
+			  <div class="constitution-description">
+				<p>Download our organization's documents below:</p>
+			  </div>
+			  <div class="constitution-files">
+				<div class="constitution-file">
+				  <a href="constitution/Constitution.docx">
+					<img src="images/C.png" alt="Word Document">
+					<p>Constitution</p>
+				  </a>
+				</div>
+				<div class="constitution-file">
+				  <a href="constitution/Amendment.docx">
+					<img src="images/AMMENDMENT.png" alt="Word Document">
+					<p>Amendment</p>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </section>		  
+	</main>
+	
+	<footer>
+		<p>&copy; 2023 African Students Association</p>
+	</footer>
+		<script src="script.js"></script>
+		<script>
+           // Change the style of the hovered element
+$('.constitution-file').hover(function() {
+  $(this).css('background-color', '#28a745');
+  $(this).css('color', 'white');
+}, function() {
+  $(this).css('background-color', 'white');
+  $(this).css('color', 'black');
+});
+
+// Add an alert when clicking on the file
+$('.constitution-file a').click(function(e) {
+  e.preventDefault();
+  alert('You have successfully downloaded the file!');
+});
+fsa
+		</script>
+		<script src="mobile.js"></script>
+</body>
+</html>

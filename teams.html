@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>African Students Association</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" type="image/png" href="images/Untitled design.png">
+
+</head>
+<body>
+	<header>
+		<div class="mini-nav fancy">
+			<div class="logo">
+				<img src="images/sweetness.png" alt="School logo">
+				<h1>African Students Association</h1>
+			</div>
+			<ul class="nav-links">
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<button class="menu-btn" onclick="toggleMenu()">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+		</div>
+		<nav class="scroll-hide">
+			<ul class="full-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="teams.html">Teams</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="teams">
+			<h2>Meet our Exec Team</h2>
+			<p>Meet the dedicated members of our executive team who work tirelessly to make African Students Association a success:</p>
+			<div class="team-members">
+			  <div class="member">
+				<img src="images/nardi.jpg" alt="Nardos Yetbarek" onclick="openModal(this)">
+				<h4>Nardos Yetbarek</h4>
+				<p>President</p>
+			  </div>
+			  <div class="member">
+				<img src="images/Shania.jpg" alt="Shania Rehmudin" onclick="openModal(this)">
+				<h4>Shania Rehmudin</h4>
+				<p>Vice President</p>
+			  </div>
+			  <div class="member">
+				<img src="images/leul.jpg" alt="Leul Abate" onclick="openModal(this)">
+				<h4>Leul Abate</h4>
+				<p>Treasurer</p>
+			  </div>
+			  <div class="member">
+				<img src="images/malak.jpg" alt="Malak Abdullal" onclick="openModal(this)">
+				<h4>Malak Abdullal</h4>
+				<p>Secretary</p>
+			  </div>
+			  <div class="member">
+				<img src="images/fruit.jpg" alt="Fruit Habib" onclick="openModal(this)">
+				<h4>Fruit Habib</h4>
+				<p>Events Coordinator</p>
+			  </div>
+			  <div class="member">
+				<img src="images/Abei.jpg" alt="Abiei Athiu" onclick="openModal(this)">
+				<h4>Abiei Athiu </h4>
+				<p>Public Relations</p>
+			  </div>
+			  <div class="member">
+				<img src="images/bk.jpg" alt="Beakal Sentayehu" onclick="openModal(this)">
+				<h4>Beakal Sentayehu</h4>
+				<p>Social Media Chair</p>
+			  </div>
+			<div class="group-photo">
+			  <img src="images/Group.jpg" alt="African Students Association Executive Team Group Photo" onclick="openModal(this)">
+			</div>	
+
+			  </div>
+		  </section>
+	</main>
+	<footer>
+		<p>&copy; 2023 African Students Association</p>
+	</footer>
+	<script src="script.js"></script>
+	<script src="mobile.js"></script>
+</body>
+</html>
